@@ -2,6 +2,15 @@ html {
     background-color: #f1f5f9;
     font-family: sans-serif;
   }
+
+  html.dark {
+    background-color: #0d0950;
+    color: #fff;
+  }
+  
+  .dark .nav-links a {
+    color: #fff;
+  }
   
   body {
     margin: 0 auto;
@@ -46,6 +55,19 @@ html {
   .expanded {
     display: unset;
   }
+
+  .hamburger {
+    padding-right: 20px;
+    cursor: pointer;
+  }
+  
+  .hamburger .line {
+    display: block;
+    width: 40px;
+    height: 5px;
+    margin-bottom: 10px;
+    background-color: #ff9776;
+  }
   
   @media screen and (min-width: 636px) {
     .nav-links {
@@ -60,6 +82,12 @@ html {
       display: inline-block;
       padding: 15px 20px;
     }
+
+    .hamburger {
+      display: none;
+    }
+
+  }
 
   footer {
     background: lightgray;
