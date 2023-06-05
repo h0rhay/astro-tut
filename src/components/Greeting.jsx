@@ -8,7 +8,8 @@ export default function Greeting({messages}) {
   const [greeting, setGreeting] = useState(randomMessage());
 
   return (
-    <div> 
+    <div>
+      {console.log('JS change to illustrate the chapt GPT PR integration', greeting)}
       <h3>{greeting}! Thank you for visiting!</h3>
       <button onClick={() => setGreeting(randomMessage())}>
         New Greeting
