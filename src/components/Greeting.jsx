@@ -9,6 +9,8 @@ export default function Greeting({messages}) {
 
   return (
     <div>
+      {console.log('JS change to illustrate the chapt GPT PR integration', greeting)}
+      {console.log('Another change', greeting)}
       <h3>{greeting}! Thank you for visiting!</h3>
       <button onClick={() => setGreeting(randomMessage())}>
         New Greeting
